@@ -22,6 +22,7 @@ export function CV() {
                 </div>
             </div>
             <div className="cv-main">
+                <div className="cv-column">
                 <CVSection title="Специализация">
                     <p>Full Stack разработчик со стажем 3 года</p>
                 </CVSection>
@@ -48,6 +49,8 @@ export function CV() {
                         ]}
                     />
                 </CVSection>
+                </div>
+                <div className="cv-column">
                 <CVSection title="Образование">
                     <TimeLabel label="2020-2024" />
                     <p>
@@ -75,6 +78,7 @@ export function CV() {
                         Английский - B2 – средний
                     </p>
                 </CVSection>
+                </div>
             </div>
         </div>
     );

@@ -14,7 +14,7 @@ button.square.winning-square{
     background-color: rgba(0, 255, 0, 0.3);
 }
 
-button.square:hover {
+button.square:not(.winning-square):hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -26,12 +26,15 @@ div.board-grid {
     justify-items: start;
     align-content: start;
     width: min-content;
+    gap: 5px;
 }
 div.game {
+    color: black;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-around;
+    margin: 10px;
 }
 .game-info  button{
     background: transparent;
@@ -47,8 +50,9 @@ div.game {
     user-select: none;
 }
 
-.game-info  button:hover{
-    font-size: 22px;
+.game-info  button:not(.winning-square):hover{
+    /* font-size: 22px; */
+    background: rgba(0, 0, 0, 0.1);
 }
 
 

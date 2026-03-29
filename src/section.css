@@ -38,10 +38,17 @@
 div.section {
     display: flex;
     flex-wrap: wrap;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    margin: 20px;
+    border-radius: 5px;
+    padding: 5px;
 }
 div.section-title {
     user-select: none;
     transition: 0.4s;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .section-content-wrapper {

@@ -1,22 +1,37 @@
+:root{
+    --main-color: rgb(55, 55, 205);
+    --bg-color: color-mix(in srgb, var(--main-color) 20%, #FFFFFF);
+}
+
 .cv-main-wrapper {
     font-size: 16px;
     max-height: 100vh;
 }
 
 .cv-main {
-    max-height: 90vh;
-    max-width: 100vw;
-    margin: 15px;
-    column-count: 2;
-    column-gap: 30px;
-    column-fill: auto;
-    overflow: auto;
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+.cv-column{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
 }
 
 .cv-section-title {
+    color: var(--main-color);
     text-transform: uppercase;
     border-bottom: 2px solid currentColor;
     padding: 5px;
+}
+
+.cv-section{
+    background: var(--bg-color);
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .cv-main > * {
