@@ -1,5 +1,5 @@
 :root{
-    --main-color: rgb(55, 55, 205);
+    --main-color: rgb(35, 35, 175);
     --bg-color: color-mix(in srgb, var(--main-color) 20%, #FFFFFF);
 }
 
@@ -75,4 +75,7 @@
     width: 100%;
     align-items: center;
     font-size: 24px;
+
+    background: var(--bg-color);
+    border-bottom: 2px solid var(--main-color);
 }
